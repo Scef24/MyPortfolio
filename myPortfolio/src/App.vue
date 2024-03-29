@@ -36,10 +36,11 @@ export default{
     
     <nav>
       <!-- <router-link to = "/">Home</router-link> -->
-      <router-link to = "/contents">Contents</router-link>
+      <router-link to = "/About">About Me</router-link>
+      <!-- <router-link to = "/contents">Contents</router-link> -->
       <router-link to = "/languages">Languages</router-link>
       <router-link to = "/Projects">Projects</router-link>
-      <router-link to = "/About">About</router-link>
+      
     </nav>
 
     <RouterView></RouterView>
@@ -49,22 +50,47 @@ export default{
 </template>
 
 <style>
+/* Reset margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure body takes full width */
+}
+
 nav {
+  margin-top: 0; 
   display: flex;
-  justify-content: space-around; /* Distribute nav items evenly */
-  padding: 10px;
-  background-color: #333; /* Dark background */
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 10px 0; 
+  background-color: #333; 
+   color: white; 
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  height: 60px; 
+  box-sizing: border-box; 
 }
 
 nav a {
-  color: white; /* White text color */
-  text-decoration: none; /* Remove underline from links */
-  padding: 10px 20px; /* Padding around links */
-  border-radius: 5px; /* Rounded corners on links */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+
 }
 
 nav a:hover {
-  background-color: #555; /* Darker background on hover */
+  background-color: #555; 
 }
+
+
+#App {
+  padding-top: 70px; 
+}
+
 </style>
