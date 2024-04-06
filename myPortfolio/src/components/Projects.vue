@@ -8,17 +8,21 @@ export default {
           title: 'My Portfolio Website',
           description: 'A personal portfolio website to showcase my work and skills.',
           technologies: ['HTML', 'CSS', 'Vue.js'],
-          demoUrl: 'https://example.com/portfolio',
-          codeUrl: 'https://github.com/yourusername/portfolio',
+          codeUrl: 'https://github.com/Scef24/MyPortfolio.git',
         },
         {
-          title: 'Interactive Data Visualization App',
-          description: 'A web application for interactive data visualization using D3.js.',
-          technologies: ['JavaScript', 'D3.js', 'HTML', 'CSS'],
-          demoUrl: 'https://example.com/data-vis',
-          codeUrl: 'https://github.com/yourusername/data-visualization',
+          title: 'CPC Library Kiosk',
+          description: 'A web application intented for borrowing books in Cordova Public College.',
+          technologies: ['Laravel', 'HTML', 'Bootstrap', 'CSS'],
+          codeUrl: 'https://github.com/Scef24/PersonalProj.git',
         },
-        // Add more projects as needed
+        {
+          title: 'Simple Calculator',
+          description: 'A simple Calculator desktop application',
+          technologies: ['Java'],
+          codeUrl: 'https://github.com/Scef24/Simple-Calculator.git',
+        }
+       
       ],
     };
   }
@@ -36,7 +40,6 @@ export default {
           <span v-for="tech in project.technologies" :key="tech" class="technology">{{ tech }}</span>
         </div>
         <div class="links">
-          <a :href="project.demoUrl" target="_blank">Live Demo</a>
           <a :href="project.codeUrl" target="_blank">Source Code</a>
         </div>
       </div>
@@ -66,6 +69,7 @@ export default {
 
 .technologies {
   margin: 10px 0;
+  color:black;
 }
 
 .technology {

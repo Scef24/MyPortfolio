@@ -53,8 +53,9 @@ export default{
    <h2> I live in Talima,Lapu-Lapu City.  </h2>
 </div>
 <div id="hobby" v-show="hobby">
-   <h2> I don't have any particular hobby.When I have my Free time <br>
-I spend it on watching shorts and instagram reels.  </h2>
+   <h2> I don't have any particular hobby because 70% of my 
+    time was on work and school. When I have my Free time <br>
+I spend it on sleeping.</h2>
 </div>
 </template>
 
