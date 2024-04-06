@@ -67,6 +67,7 @@ export default{
   <div id="profile" v-show="profile">
     <img :src="pic1Url" alt="" srcset="" height="250px" width="200px">
 </div>
+<br><br>
     <div v-show="firstText"><h3>HI I am Christian Adrianne Ochea</h3></div>
     <div v-show="secondText"><h3>Welcome to my Portfolio</h3></div>
     <div v-show="thirdText"><h3>This contains relevant information 
